@@ -14,3 +14,7 @@ def count_words(url):
     
     json_output = json.dumps(word_counts_dict)
     return json_output
+#You can call this microservice by passing in the URL of the webpage as a parameter:
+url = "https://example.com"
+json_output = count_words(url)
+print(json_output)
